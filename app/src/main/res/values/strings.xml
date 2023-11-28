@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Grade Calculator</string>
+    <string name="Login">Log in</string>
+    <string name="Signup">Sign Up</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="Dob">Date of Birth</string>
+    <string name="AssignmentExam">Assignment/Exam</string>
+    <string name="Optional">(Optional)</string>
+    <string name="Grade">Grade</string>
+    <string name="Weight">Weight (%)</string>
+    <string name="Calculate">Calculate</string>
+</resources>

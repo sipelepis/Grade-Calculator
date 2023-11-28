@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/green"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/login_footer"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="Create New Account"
+            android:fontFamily="@font/pridi_bold"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/NameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/AlreadyRegisteredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pridi"
+            android:text="Already Registered? "
+            android:textColor="@color/green"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LoginHereButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/pridi_semibold"
+            android:text="Log in Here"
+            android:textColor="@color/green"
+            android:textSize="15dp"
+            android:theme="@null" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:fontFamily="@font/pridi_semibold"
+        android:text="@string/Name"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/NameTil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/green"
+        app:boxBackgroundMode="none"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/pridi"
+            android:hint="@null"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:theme="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/EmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:fontFamily="@font/pridi_semibold"
+        android:text="@string/Email"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailTil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/green"
+        app:boxBackgroundMode="none"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/pridi"
+            android:hint="@null"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:theme="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/PasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="42dp"
+        android:fontFamily="@font/pridi_semibold"
+        android:text="@string/Password"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordTil"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/green"
+        app:boxBackgroundMode="none"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/DOBTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="4dp"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/pridi"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/confirmPasswordTextview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="42dp"-->
+<!--        android:fontFamily="@font/pridi_semibold"-->
+<!--        android:text="@string/confirmPassword"-->
+<!--        android:textColor="@color/green"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/PasswordTil" />-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/confirmPasswordTil"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:background="@drawable/input_bg"-->
+<!--        android:textColor="@color/green"-->
+<!--        app:boxStrokeWidth="0dp"-->
+<!--        app:boxStrokeWidthFocused="0dp"-->
+<!--        app:boxBackgroundMode="none"-->
+<!--        app:passwordToggleEnabled="true"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordTextview">-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/confirmpassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginHorizontal="8dp"-->
+<!--            android:layout_marginBottom="4dp"-->
+<!--            android:drawableStart="@drawable/baseline_password_24"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:fontFamily="@font/pridi"-->
+<!--            android:textColor="@color/green"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textSize="20sp" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <TextView
+        android:id="@+id/DOBTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/pridi_semibold"
+        android:text="@string/Dob"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/DOBLinearLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/DOBLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/monthDOBtil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/green"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/monthDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/pridi"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pridi_bold"
+            android:paddingHorizontal="10dp"
+            android:text="/"
+            android:textColor="@color/green"
+            android:textSize="40dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dayDOBtil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg"
+            android:textColor="@color/green"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dayDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/pridi"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pridi_bold"
+            android:paddingHorizontal="10dp"
+            android:text="/"
+            android:textColor="@color/green"
+            android:textSize="40dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/yearDOBtil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/input_bg"
+            android:textColor="@color/green"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/yearDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/pridi"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/pridi_semibold"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="5dp"
+        android:text="@string/Signup"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

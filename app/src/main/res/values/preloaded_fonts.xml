@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/pridi</item>
+        <item>@font/pridi_bold</item>
+        <item>@font/pridi_extralight</item>
+        <item>@font/pridi_light</item>
+        <item>@font/pridi_medium</item>
+        <item>@font/pridi_semibold</item>
+    </array>
+</resources>

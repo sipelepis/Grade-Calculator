@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "140826322441",
+    "project_id": "grade-calculator-app---matthew",
+    "storage_bucket": "grade-calculator-app---matthew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140826322441:android:d2db1843e9d6dbb5903ad8",
+        "android_client_info": {
+          "package_name": "grade.calculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlASrtn_lXb1KpIt1qgi8-7rOmB7bmb2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140826322441:android:cc0090907ed43d3b903ad8",
+        "android_client_info": {
+          "package_name": "grade.calculator.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlASrtn_lXb1KpIt1qgi8-7rOmB7bmb2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
